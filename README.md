@@ -27,7 +27,7 @@ First to open any Browser and to open Remix IDE, it's an online Solidity Platfor
 
 then create a new file and file extension is .sol and save it. then copy and paste the code into the file:
 
-// SPDX-License-Identifier: MIT pragma solidity 0.8.26; contract MyToken {
+// SPDX-License-Identifier: MIT pragma solidity 0.8.26; contract MyCustomToken {
 // public variables here
 string public tokenName = "Anish";
 string public tokenAbbrs = "Ani";
@@ -67,4 +67,4 @@ If you encounter any issues or have questions, consider the following:
 
 ## License
 
-This project is licensed under the MIT License 
+This project is licensed under the MIT License.
