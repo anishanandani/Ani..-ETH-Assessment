@@ -22,7 +22,38 @@ Follow these steps to deploy and interact with the contract:
 1. Deploy the contract to an Ethereum network using a development environment like Remix or Truffle.
 2. Interact with the deployed contract using tools like Remix IDE, Truffle console, or web3.js.
 3. Use the provided functions to mint new tokens and burn existing ones as needed.
+   
+First to open any Browser and to open Remix IDE, it's an online Solidity Platform. link - https://remix.ethereum.org/.
 
+then create a new file and file extension is .sol and save it. then copy and paste the code into the file:
+
+// SPDX-License-Identifier: MIT pragma solidity 0.8.26; contract MyToken {
+// public variables here
+string public tokenName = "Anish";
+string public tokenAbbrs = "Ani";
+uint public totalSupply = 0;
+
+
+// mapping variable here
+
+mapping (address => uint) public balance;
+
+// mint function
+function mint (address _address, uint _value) public {
+    totalSupply += _value;
+    balance[_address] += _value;
+
+}
+
+// burn function
+
+function burn(address _address, uint _value) public {
+    if (balance[_address] >= _value) {
+         totalSupply -= _value;
+        balance[_address] -= _value;
+
+    }
+}
 ## Help
 
 If you encounter any issues or have questions, consider the following:
