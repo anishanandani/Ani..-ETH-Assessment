@@ -18,8 +18,8 @@ pragma solidity 0.8.26;
 contract MyCustomToken {
 
     // Public variables to store token details
-    string public tokenName = "My Custom Token";
-    string public tokenAbbreviation = "MCT";
+    string public tokenName = "Anish";
+    string public tokenAbbreviation = "Ani";
     uint public totalTokenSupply = 0;
 
     // Mapping to track token balances for each address
